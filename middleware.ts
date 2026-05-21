@@ -1,7 +1,7 @@
 import { NextResponse, type NextRequest } from "next/server";
 
 const SEO_CRAWLERS =
-  /AhrefsBot|SemrushBot|GPTBot|ClaudeBot|OAI-SearchBot|PerplexityBot|Bytespider/i;
+  /Googlebot|AhrefsBot|SemrushBot|GPTBot|ClaudeBot|OAI-SearchBot|PerplexityBot|Bytespider/i;
 
 export function middleware(req: NextRequest) {
   const ua = req.headers.get("user-agent") ?? "";
